@@ -107,14 +107,12 @@ rp(options)
 			};
 		});
 
-		console.log(matches[0]);
-
 		// ---------------------
 		// LEAVE ME TILL LAST
 		// ---------------------
 
 		// If match not televised, remove it
-		channels.forEach((el, i) => {
+		names.forEach((el, i) => {
 			if (el === "Live Stream") {
 				delete matches[i];
 			}
@@ -132,8 +130,6 @@ rp(options)
 
 			return obj;
 		}, {});
-
-		console.log(sortedMatches);
 
 		// Convert to JSON
 		let televisedFixtures = JSON.stringify(sortedMatches);
