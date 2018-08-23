@@ -151,7 +151,7 @@ rp(options)
 
 		// Create .json file from data
 		fs.appendFile(
-			"fixtures-today.json",
+			"src/data/fixtures-today.json",
 			televisedFixtures,
 			err => (err ? console.log(err) : console.log("Success (Todays Fixtures)"))
 		);
@@ -299,7 +299,7 @@ rp(tomorrow)
 
 		// Create .json file from data
 		fs.appendFile(
-			"fixtures-tomorrow.json",
+			"src/data/fixtures-tomorrow.json",
 			televisedFixtures,
 			err =>
 				err ? console.log(err) : console.log("Success (Tomorrows fixtures)")
@@ -448,7 +448,7 @@ rp(two_days)
 
 		// Create .json file from data
 		fs.appendFile(
-			"fixtures-two_days.json",
+			"src/data/fixtures-two_days.json",
 			televisedFixtures,
 			err =>
 				err ? console.log(err) : console.log("Success (Two_Day Fixtures)")
