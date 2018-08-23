@@ -63,7 +63,7 @@
 	width: 100%;
 	display: flex;
 	background: white;
-	/* margin: auto; */
+	margin: 0 auto;
 	height: 7rem;
 }
 .row .home.badge img {
