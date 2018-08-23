@@ -1,0 +1,76 @@
+nav {
+	padding: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+nav > * {
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 1rem;
+	color: var(--grey);
+	font-weight: 400;
+	text-transform: uppercase;
+	font-family: "Unica One";
+	box-sizing: border-box;
+}
+
+nav > *:hover {
+	color: var(--green);
+}
+
+.active {
+	position: relative;
+	color: white !important;
+	border-bottom: 4px solid white;
+}
+
+#toggle {
+	display: none;
+	z-index: 20;
+	cursor: pointer;
+	margin: 0;
+}
+
+svg {
+	fill: white;
+}
+
+@media screen and (max-width: 419px) {
+	.hidden {
+		transform: translateY(-100%);
+	}
+	nav {
+		z-index: 10;
+		background: black;
+		flex-direction: column;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		box-shadow: 0 -20px 0 black;
+		transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	}
+
+	nav > * {
+		margin: 0.5rem 0.5rem;
+		min-width: 33%;
+		max-width: fit-content;
+	}
+	.active {
+		border: 0;
+	}
+	#toggle {
+		display: flex;
+		color: white;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 2rem;
+		height: 2rem;
+		padding: 1rem;
+		justify-content: center;
+		align-items: center;
+		border-radius: 0 0 0 70%;
+	}
+}

@@ -27,7 +27,7 @@
 
 .row {
 	display: grid;
-	grid-template-columns: 0.5fr 1fr 0.5fr;
+	grid-template-columns: 0.4fr 1fr 0.4fr;
 	justify-content: center;
 	padding: 2rem 0;
 	position: relative;
@@ -65,11 +65,23 @@
 	margin: auto;
 	height: 7rem;
 }
+.row .home.badge img {
+	margin: 0 auto 0 0.35rem;
+}
+.row .away.badge img {
+	margin: 0 0.35rem 0 auto;
+}
 .row .badge img {
 	width: 50px;
-	margin: auto;
 	align-self: center;
 }
+
+@media screen and (min-width: 400px) {
+	.row .badge img {
+		margin: auto !important;
+	}
+}
+
 .row .home.badge {
 	border-radius: 0 5rem 5rem 0;
 }
