@@ -29,6 +29,7 @@
 	display: grid;
 	grid-template-columns: 0.4fr 1fr 0.4fr;
 	justify-content: center;
+	align-items: center;
 	padding: 2rem 0;
 	position: relative;
 	transition: all 350ms ease-in-out;
@@ -62,7 +63,7 @@
 	width: 100%;
 	display: flex;
 	background: white;
-	margin: auto;
+	/* margin: auto; */
 	height: 7rem;
 }
 .row .home.badge img {
