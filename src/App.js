@@ -4,6 +4,7 @@ import fixturesToday from "./data/fixtures-today.json";
 import fixturesTomorrow from "./data/fixtures-tomorrow.json";
 import fixturesTwoDays from "./data/fixtures-two_days.json";
 import Nav from "./components/Nav/Nav";
+import Footer from "./components/Footer/Footer";
 
 class App extends Component {
 	constructor(props) {
@@ -78,6 +79,7 @@ class App extends Component {
 						);
 					})}
 				</div>
+				<Footer />
 			</React.Fragment>
 		);
 	}
